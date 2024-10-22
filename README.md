@@ -2,6 +2,8 @@
 
 This project sets up an Azure Kubernetes Service (AKS) cluster using OpenTofu. OpenTofu is an open-source infrastructure as code tool that allows you to define and provision infrastructure using a high-level configuration language. For more information on OpenTofu and installation instructions, visit the [official documentation](https://opentofu.org/docs).
 
+![alt text](./static/test.png)
+
 ## Prerequisites
 
 - OpenTofu installed on your machine. Follow the [installation guide](https://opentofu.org/docs/installation) to set it up.
