@@ -6,7 +6,7 @@ This project sets up an Azure Kubernetes Service (AKS) cluster using OpenTofu. O
 
 ## Prerequisites
 
-- OpenTofu installed on your machine. Follow the [installation guide](https://opentofu.org/docs/installation) to set it up.
+- OpenTofu installed on your machine. Follow the [installation guide](https://opentofu.org/docs/intro/install/) to set it up.
 - Azure CLI installed and authenticated.
 
 ## Project Structure
