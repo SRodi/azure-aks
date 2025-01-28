@@ -6,6 +6,7 @@ provider "registry.opentofu.org/hashicorp/azurerm" {
   constraints = ">= 2.0.0"
   hashes = [
     "h1:G/hShSb0GQnCBdzJiiwPoXVA1gNmGmenGRjQA0VKYQc=",
+    "h1:h3Fp/ngeRv8DdKlyC6M2uVo0aEScgGcTWh29C9ZJ2n0=",
     "zh:18b184eaa1f4419ea280b50e2333c969ca6e793afc8ed82f40f39892ae5363c4",
     "zh:39144cf3036ee044015f5561bdb2ad97fc851b1ef9eb6cd6e4b52a37a67ed456",
     "zh:4fd34fe28f52b497c0075edc221fcfbf6abb3567099e9de2b96cf3ecfb545780",

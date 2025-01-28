@@ -9,70 +9,59 @@ This project sets up an Azure Kubernetes Service (AKS) cluster using OpenTofu. O
 - OpenTofu installed on your machine. Follow the [installation guide](https://opentofu.org/docs/intro/install/) to set it up.
 - Azure CLI installed and authenticated.
 
-## Project Structure
+### Available Commands
 
-The project directory is organized as follows:
+### init
 
-```
-├── main.tf
-├── variables.tf
-├── outputs.tf
-├── README.md
-└── .terraform.lock.hcl
-```
-
-- `main.tf`: Contains the main configuration for the AKS cluster.
-- `variables.tf`: Defines the input variables for the project.
-- `outputs.tf`: Defines the outputs of the project.
-- `README.md`: Project documentation.
-- `.terraform.lock.hcl`: Automatically managed by OpenTofu, should not be edited manually.
-
-## Instructions
-
-### Create `terraform.tfvars`
-
-Create a `terraform.tfvars` file in the root directory of the project. This file should contain the values for the variables defined in `variables.tf`. Below is an example of what this file might look like:
-
-```hcl
-subscription_id     = "your-subscription-id"
-tenant_id           = "your-tenant-id"
-location            = "uksouth"
-resource_group_name = "your-resource-group-name"
-prefix              = "your-prefix"
-labels = {
-  environment = "test"
-  team        = "devops"
-}
-```
-
-### Initialize the Project
-Run the following command to initialize the project. This will download the necessary providers and set up the backend.
+Initializes the project by setting up the necessary providers and backend configuration.
 
 ```sh
-tofu init
+make init
 ```
 
-### Plan the Deployment
-Run the following command to create an execution plan. This will show you what changes will be made without actually applying them.
+This command runs tofu init in the aks directory.
+
+### plan
+Generates an execution plan for the project, showing what changes will be made without actually applying them.
 
 ```sh
-tofu plan
+make plan
 ```
 
-### Apply the Deployment
-Run the following command to apply the changes and create the resources.
+This command runs tofu plan in the aks directory.
+
+### apply
+Applies the changes and creates the resources as defined in the configuration files.
 
 ```sh
-tofu apply
+make apply
 ```
 
-### Destroy the Deployment
-If you need to destroy the resources created by this project, run the following command.
+This command runs tofu apply in the aks directory.
+
+### destroy
+Destroys the resources created by the project.
 
 ```sh
-tofu destroy
+make destroy
 ```
 
-## Notes
+This command runs tofu destroy in the aks directory.
 
-For more detailed information on each command, refer to the [OpenTofu CLI documentation](https://opentofu.org/docs/cli).
+### fmt
+Formats the configuration files to ensure they follow the standard style.
+
+```sh
+make fmt
+```
+
+This command runs tofu fmt -recursive to format all configuration files recursively.
+
+### test
+Runs the tests to validate the infrastructure and its outputs.
+
+```sh
+make test
+```
+
+This command runs go test -v ./... in the test directory.
