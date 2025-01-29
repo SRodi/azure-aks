@@ -9,6 +9,15 @@ This project sets up an Azure Kubernetes Service (AKS) cluster using OpenTofu. O
 - OpenTofu installed on your machine. Follow the [installation guide](https://opentofu.org/docs/intro/install/) to set it up.
 - Azure CLI installed and authenticated.
 
+### Create `terraform.tfvars`
+
+Create a `terraform.tfvars` file in the [examples/aks](./examples/aks) and [live/aks](./live/aks) directories of the project. This is required by the provider to authenticate to Azure. Below is an example of what this file might look like:
+
+```hcl
+subscription_id     = "your-subscription-id"
+tenant_id           = "your-tenant-id"
+```
+
 ### Available Commands
 
 ### init
