@@ -4,6 +4,12 @@ This project sets up an Azure Kubernetes Service (AKS) cluster using OpenTofu. O
 
 ![alt text](./static/test.png)
 
+## Testing flow
+
+In this example, I use Terratest to deploy an AKS cluster with OpenTofu and verify its functionality. The high-level flow is represented in this diagram.
+
+![alt text](./static/diagram.png)
+
 ## Prerequisites
 
 - OpenTofu installed on your machine. Follow the [installation guide](https://opentofu.org/docs/intro/install/) to set it up.
