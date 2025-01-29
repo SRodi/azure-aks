@@ -18,7 +18,7 @@ func TestAKSCluster(t *testing.T) {
 
 	// Define the OpenTofu options
 	terraformOptions := &terraform.Options{
-		// The path to where your Terraform code is located
+		// The path to where your OpenTofu code is located
 		TerraformDir: "../examples/aks",
 
 		// Variables to pass to our OpenTofu code using -var options

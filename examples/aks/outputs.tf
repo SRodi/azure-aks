@@ -14,6 +14,6 @@ output "client_key" {
 }
 
 output "host" {
-  value = module.aks.host
+  value     = module.aks.host
   sensitive = true
 }

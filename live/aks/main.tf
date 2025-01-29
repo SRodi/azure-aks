@@ -1,5 +1,5 @@
 module "aks" {
-  source = "../../modules/aks"
+  source              = "../../modules/aks"
   resource_group_name = var.resource_group_name
   location            = var.location
   prefix              = var.prefix
